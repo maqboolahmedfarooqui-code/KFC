@@ -24,8 +24,6 @@ const exploreMenu = [
     img : "images/sharing.png",
     tital : "Sharing"
   },
-
-
  ]
 
  

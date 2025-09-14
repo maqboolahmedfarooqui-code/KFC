@@ -2,6 +2,10 @@
     font-family: sans-serif;
 }
 
+.slider1{
+  margin-top: 48px;
+}
+
 @media (max-width: 576px) {
   #carouselExampleControls1 {
     margin-top: 80px; 
@@ -40,6 +44,7 @@
 .carousel-control-next {
   right: 10px; 
 }
+
 .carousel-control-prev {
   left: 10px;    
 }
@@ -49,7 +54,6 @@
  height: 200px;
  background-color: rgb(29, 27, 27);
   border-radius: 50% 50% 2% 50%;
-
   display: flex;               
   align-items: center;         
   justify-content: center;     
@@ -64,7 +68,6 @@
 
 .exploreMenuHeading{
   font-size: 17px;
-
 }
 
 .lineee{
@@ -83,15 +86,13 @@
 }
 
 .exploreMenu2{
-   width: 200px;
-   height: 200px;
-    background-color: rgb(29, 27, 27);
+  width: 200px;
+  height: 200px;
+  background-color: rgb(29, 27, 27);
   border-radius: 50% 50% 2% 50%;
-
   display: flex;              
   align-items: center;         
   justify-content: center;     
-  
 }
 
 .exploreMenu2 img{
@@ -122,8 +123,6 @@
   background: #383535;
 }
 
-  
-
  .BestSeller {
   display: flex;
   overflow-x: auto;   
@@ -150,21 +149,23 @@
 }
 
 .redbox{
-     background-color: #E4002B; 
-     text-align: center; 
-     height: 30px;
-      width: 20px; 
-    }
+  background-color: #E4002B; 
+  text-align: center; 
+  height: 30px;
+  width: 20px; 
+}
+
 .Rs{
   font-size: 20px;
 }
+
 .Price{
-    background-color: #E4002B;  
-    border-radius: 10%;
+  background-color: #E4002B;  
+  border-radius: 10%;
 }   
 
 
-  .TopDeals::-webkit-scrollbar {
+.TopDeals::-webkit-scrollbar {
   height: 10px;   
 }
 
@@ -211,10 +212,10 @@
 
 
 .redbox{
-     background-color: #E4002B; 
-     text-align: center; 
-     height: 30px;
-      width: 20px; 
+  background-color: #E4002B; 
+  text-align: center; 
+  height: 30px;
+  width: 20px; 
 }
 
 .Rs{
@@ -222,8 +223,8 @@
 }
 
 .Price{
-    background-color: #E4002B;  
-    border-radius: 10%;
+  background-color: #E4002B;  
+  border-radius: 10%;
 }   
 
 .favourite{  
@@ -256,8 +257,6 @@
 
 .lbaner{
   background-color:#201e1f;
-  
-  
 }
 
 .lbaner button{
@@ -267,8 +266,8 @@
 }
 
 .lbaner button:hover{
-   background-color: #780000;
-   transition: 0.4s;
+  background-color: #780000;
+  transition: 0.4s;
 }
 
 .fback{
