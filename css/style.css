@@ -2,6 +2,13 @@
     font-family: sans-serif;
 }
 
+@media (max-width: 576px) {
+  #carouselExampleControls1 {
+    margin-top: 20px; 
+  }
+}
+
+
 .redd{
      background-color: #E4002B;  
 }
