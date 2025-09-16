@@ -1,72 +1,81 @@
-  // EXPLORE MENU API
-const exploreMenu = [
-  {
-    img : 'images/promotion.png' ,
-    tital : "Promotion"
-  },
+ // Explore Menu Items
+  const exploreAll = [
+    { 
+      img: "images/promotion.png",
+     tital: "Promotion" 
+    },
 
-  {
-    img : "images/everyday-value.png" ,
-    tital : "Everyday Value"
-  },
+    { 
+      img: "images/everyday-value.png",
+     tital: "Everyday Value"
+     },
 
-  {
-    img : "images/ala-carte-&-combos.png",
-    tital : "ala-carte-&-combos"
-  },
+    { 
+      img: "images/ala-carte-&-combos.png",
+     tital: "Ala Carte & Combos" 
+    },
 
-  {
-    img : "images/signature-boxes.png",
-    tital : "Signature-Boxes"
-  },
+    { 
+      img: "images/signature-boxes.png",
+     tital: "Signature Boxes" 
+    },
 
-  {
-    img : "images/sharing.png",
-    tital : "Sharing"
-  },
- ]
+    { 
+      img: "images/sharing.png",
+       tital: "Sharing" 
+    },
+    { 
+      img: "images/snaks-&-baverages.png",
+       tital: "Snaks & Beverages" 
+    },
 
- 
- exploreMenu.forEach((print)=>{
-    let expMenu = `
-    <div class="exploreMenu ms-5">
+    { 
+      img: "images/midnight-(start-at-12-am).png",
+       tital: "Midnight (12 am)"
+    },
+  ];
+
+  // Render explore cards
+  exploreAll.forEach((print) => {
+    let card = `
+      <div class="exploreMenu ms-3">
         <div>
-        <img src=${print.img} class="d-block mx-2" alt="Menu 3">
-        <h5 class="exploreMenuHeading text-white text-center">${print.tital}</h5>
-        <p class="lineee linee"></p>
+          <img src="${print.img}" class="d-block mx-auto" alt="Menu">
+          <h5 class="exploreMenuHeading text-white text-center mt-2">${print.tital}</h5>
+          <p class="lineee linee"></p>
         </div>
-        </div>
-    `
-    document.getElementById('expMenu').innerHTML += expMenu
- })
+      </div>
+    `;
+    document.getElementById("exploreSlider").innerHTML += card;
+  });
 
-  // EXPLORE MENU SS API
- const expMenuSS = [
-   {
-    img : "images/snaks-&-baverages.png",
-    tital : "Snaks-&-Baverages"
-  },
+  // Explore slider functionality
+  const exploreContainer = document.getElementById("exploreSlider");
+  const exploreNext = document.getElementById("exploreNext");
+  const explorePrev = document.getElementById("explorePrev");
 
-  {
-    img : "images/midnight-(start-at-12-am).png",
-    tital : "Midnight (start at 12 am)"
-  },
- ]
- 
- expMenuSS.forEach((print)=>{
-  let expMenuSS = `
-    <div class="exploreMenu2 ms-5">
-        <div>
-        <img src=${print.img} class="d-block mx-2" alt="Menu 6">
-        <h5 class="exploreMenuHeading text-white text-center">${print.tital}</h5>
-        <p class="lineee linee"></p>
-        </div>
-        </div>
-  `
-  document.getElementById('expMenuSS').innerHTML += expMenuSS
+  const exploreScroll = 250;
 
- })
+  // Right
+  exploreNext.addEventListener("click", () => {
+    exploreContainer.scrollBy({ left: exploreScroll, behavior: "smooth" });
+  });
 
+  // Left
+  explorePrev.addEventListener("click", () => {
+    exploreContainer.scrollBy({ left: -exploreScroll, behavior: "smooth" });
+  });
+
+  // Auto scroll
+  setInterval(() => {
+    exploreContainer.scrollBy({ left: exploreScroll, behavior: "smooth" });
+
+    if (exploreContainer.scrollLeft + exploreContainer.clientWidth >= exploreContainer.scrollWidth) {
+      exploreContainer.scrollTo({ left: 0, behavior: "smooth" });
+    }
+  }, 5000);
+
+  
  //BEST SELLER
 
  const bestSeller = [

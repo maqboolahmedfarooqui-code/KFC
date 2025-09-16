@@ -49,15 +49,20 @@
   left: 10px;    
 }
 
-.exploreMenu{
-  width: 40%;
+.exploreMenu {
  height: 200px;
  background-color: rgb(29, 27, 27);
-  border-radius: 50% 50% 2% 50%;
-  display: flex;               
-  align-items: center;         
-  justify-content: center;     
-  
+ border-radius: 50% 50% 2% 50%;
+flex: 0 0 auto;
+width: 180px;
+min-width: 160px;
+align-items: center;
+justify-content: center;
+}
+
+/* Arrow buttons */
+.carousel-btn {
+ z-index: 1;
 }
 
 .exploreMenu img{
@@ -71,7 +76,7 @@
 }
 
 .lineee{
-  margin-left: 80px;
+  margin-left: 60px;
   margin-bottom: 20px;
   border-radius: 0 50% 0 50%;
 }
